@@ -1,0 +1,460 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Modelling Challenge:
+\series default
+ Fluids on membranes
+\end_layout
+
+\begin_layout Author
+Oliver Bond, Meredith Ellis, Nicolas Bouell
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+, Huining Yang
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/user/Downloads/43443947_886891788174373_6860203510730850304_n.jpg
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/user/Downloads/43554517_393459901191999_1180683902625251328_n.jpg
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Assumptions
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+pressure 
+\series default
+due to the liquid is 
+\emph on
+hydrostatic 
+\emph default
+(so there is 
+\series bold
+no fluid flow
+\series default
+)
+\end_layout
+
+\begin_layout Itemize
+The upward force is only due to the surface tension of fluid
+\end_layout
+
+\begin_layout Itemize
+All the fibres are 
+\series bold
+square in cross-section 
+\series default
+and of the 
+\emph on
+same size
+\end_layout
+
+\begin_layout Itemize
+There is only one layer of fibres and these are in 1 dimension
+\end_layout
+
+\begin_layout Itemize
+The membrane 
+\series bold
+does not bend
+\end_layout
+
+\begin_layout Itemize
+The pressure is constant over the widthscale of the fibre
+\end_layout
+
+\begin_layout Itemize
+The flow is incompressible and irrotational
+\end_layout
+
+\begin_layout Subsection*
+Physical law
+\end_layout
+
+\begin_layout Standard
+We consider 
+\series bold
+Newton's Second Law
+\series default
+, in other words, balancing forces.
+ 
+\end_layout
+
+\begin_layout Standard
+At each point on the surface, pressure balance results in (at each point
+ on the interface)
+\begin_inset Formula 
+\[
+\rho gh=\kappa\gamma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density of water, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is the curvature of the interface, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is a constant, and 
+\begin_inset Formula $h=h(x)$
+\end_inset
+
+ is the vertical distance of the meniuscus at point 
+\begin_inset Formula $x$
+\end_inset
+
+ from the bottom edge of one of the fibres.
+ In particular (from page 13 of the 
+\emph on
+Topics in Fluids 
+\emph default
+notes), 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is the curvature of the meniscus, given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\kappa=\dfrac{h_{xx}}{\left(1+h_{x}^{2}\right)^{\frac{3}{2}}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, in the simplest possible case we can assume that this is a constant,
+ that is, that the meniuscus is a circular arc.
+ So we can use 
+\begin_inset Formula $\kappa=\dfrac{1}{R_{M}}$
+\end_inset
+
+ where 
+\begin_inset Formula $R_{M}$
+\end_inset
+
+ is the radius of this circular arc.
+ All that remains is to find 
+\begin_inset Formula $R_{M}$
+\end_inset
+
+ in terms of the other parameters, which can be done using trigonometry.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Variables
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the angle (in 
+\emph on
+radians
+\emph default
+) between each point of contact of the meniscus and fibre, and the horizontal
+ axis pointing towards the middle of the two fibres.
+ If these are different for each of the fibres, we shall call these 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Parameters
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{M}$
+\end_inset
+
+ is the (signed) radius of curvature of the meniuscus (in 
+\emph on
+metres
+\emph default
+) when it is in its steady state.
+ If 
+\begin_inset Formula $R_{M}>0$
+\end_inset
+
+ then the meniscus is 
+\begin_inset Formula $\cup$
+\end_inset
+
+-shaped; if 
+\begin_inset Formula $R_{M}<0$
+\end_inset
+
+ then the meniscus is 
+\begin_inset Formula $\cap$
+\end_inset
+
+-shaped.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d_{w}$
+\end_inset
+
+ is the distance between the fibres (in 
+\emph on
+metres
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R$
+\end_inset
+
+ is the radius of each of the fibres (in 
+\emph on
+metres
+\emph default
+).
+ If the radii of the two fibres are different, we shall call these 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle of contact (in 
+\emph on
+radians
+\emph default
+) between the meniscus and the fibre (i.e.
+ if there is a point where the meniscus touches the fibre, this is the angle
+ between the tangent to the circle at that point, and the tangent of the
+ meniscus at that point).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\ell$
+\end_inset
+
+ is the distance (in 
+\emph on
+metres
+\emph default
+) between the centres of two fibres.
+\end_layout
+
+\begin_layout Subsection*
+Constitutive law
+\end_layout
+
+\begin_layout Standard
+We want to find the steady state of the membrane.
+ To start with we assume that this is a circular arc, i.e.
+ 
+\begin_inset Formula $R_{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Solution
+\end_layout
+
+\begin_layout Standard
+We can use trigonometry to derive the formula
+\begin_inset Formula 
+\[
+R_{M}=\dfrac{\dfrac{\ell}{2}-R\cos\alpha}{-\cos(\alpha-\theta)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This specifies the function 
+\begin_inset Formula $R_{M}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There is a value of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, which we will call 
+\begin_inset Formula $\alpha_{{\rm crit}}$
+\end_inset
+
+, for which the curvature changes sign (so the meniscus changes from being
+ 
+\begin_inset Formula $\cap$
+\end_inset
+
+-shaped to 
+\begin_inset Formula $\cup$
+\end_inset
+
+-shaped).
+ In between these cases, the meniscus is completely flat, which happens
+ as 
+\begin_inset Formula $\left|R_{M}\right|\to\infty$
+\end_inset
+
+.
+ This happens when 
+\begin_inset Formula $\cos(\alpha-\theta)=0$
+\end_inset
+
+, i.e.
+ when 
+\begin_inset Formula $\alpha=$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

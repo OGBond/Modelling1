@@ -1,0 +1,111 @@
+%% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{babel}
+\begin{document}
+
+\title{\textbf{Modelling Challenge:} Fluids on membranes}
+
+\author{Oliver Bond, Meredith Ellis, Nicolas Bouell\'e, Huining Yang}
+\maketitle
+\begin{center}
+\includegraphics[width=15cm]{/home/user/Downloads/43443947_886891788174373_6860203510730850304_n}
+\par\end{center}
+
+\begin{center}
+\includegraphics[width=15cm]{/home/user/Downloads/43554517_393459901191999_1180683902625251328_n}
+\par\end{center}
+
+\subsection*{Assumptions}
+\begin{itemize}
+\item The \textbf{pressure }due to the liquid is \emph{hydrostatic }(so
+there is \textbf{no fluid flow})
+\item The upward force is only due to the surface tension of fluid
+\item All the fibres are \textbf{square in cross-section }and of the \emph{same
+size}
+\item There is only one layer of fibres and these are in 1 dimension
+\item The membrane \textbf{does not bend}
+\item The pressure is constant over the widthscale of the fibre
+\item The flow is incompressible and irrotational
+\end{itemize}
+
+\subsection*{Physical law}
+
+We consider \textbf{Newton's Second Law}, in other words, balancing
+forces. 
+
+At each point on the surface, pressure balance results in (at each
+point on the interface)
+\[
+\rho gh=\kappa\gamma
+\]
+
+where $\rho$ is the density of water, $\kappa$ is the curvature
+of the interface, $\gamma$ is a constant, and $h=h(x)$ is the vertical
+distance of the meniuscus at point $x$ from the bottom edge of one
+of the fibres. In particular (from page 13 of the \emph{Topics in
+Fluids }notes), $\kappa$ is the curvature of the meniscus, given
+by
+
+\[
+\kappa=\dfrac{h_{xx}}{\left(1+h_{x}^{2}\right)^{\frac{3}{2}}}.
+\]
+
+However, in the simplest possible case we can assume that this is
+a constant, that is, that the meniuscus is a circular arc. So we can
+use $\kappa=\dfrac{1}{R_{M}}$ where $R_{M}$ is the radius of this
+circular arc. All that remains is to find $R_{M}$ in terms of the
+other parameters, which can be done using trigonometry. 
+
+\subsection*{Variables}
+\begin{itemize}
+\item $\alpha$ is the angle (in \emph{radians}) between each point of contact
+of the meniscus and fibre, and the horizontal axis pointing towards
+the middle of the two fibres. If these are different for each of the
+fibres, we shall call these $\alpha_{1}$ and $\alpha_{2}$.
+\end{itemize}
+
+\subsection*{Parameters}
+\begin{itemize}
+\item $R_{M}$ is the (signed) radius of curvature of the meniuscus (in
+\emph{metres}) when it is in its steady state. If $R_{M}>0$ then
+the meniscus is $\cup$-shaped; if $R_{M}<0$ then the meniscus is
+$\cap$-shaped.
+\item $d_{w}$ is the distance between the fibres (in \emph{metres})
+\item $R$ is the radius of each of the fibres (in \emph{metres}). If the
+radii of the two fibres are different, we shall call these $r_{1}$
+and $r_{2}$.
+\item $\theta$ is the angle of contact (in \emph{radians}) between the
+meniscus and the fibre (i.e. if there is a point where the meniscus
+touches the fibre, this is the angle between the tangent to the circle
+at that point, and the tangent of the meniscus at that point).
+\item $\ell$ is the distance (in \emph{metres}) between the centres of
+two fibres.
+\end{itemize}
+
+\subsection*{Constitutive law}
+
+We want to find the steady state of the membrane. To start with we
+assume that this is a circular arc, i.e. $R_{M}$.
+
+\subsection*{Solution}
+
+We can use trigonometry to derive the formula
+\[
+R_{M}=\dfrac{\dfrac{\ell}{2}-R\cos\alpha}{-\cos(\alpha-\theta)}.
+\]
+
+This specifies the function $R_{M}$ in terms of $\alpha$.
+
+There is a value of $\alpha$, which we will call $\alpha_{{\rm crit}}$,
+for which the curvature changes sign (so the meniscus changes from
+being $\cap$-shaped to $\cup$-shaped). In between these cases, the
+meniscus is completely flat, which happens as $\left|R_{M}\right|\to\infty$.
+This happens when $\cos(\alpha-\theta)=0$, i.e. when $\alpha=$
+\end{document}
