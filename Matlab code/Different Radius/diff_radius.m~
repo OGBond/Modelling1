@@ -18,6 +18,7 @@ for alpha1 = ListAlpha
     alpha2 = [alpha2, x(2)];
 end
 figure
+title("
 subplot(1,2,1)
 plot(ListAlpha*180/pi,Rm)
 xlabel("alpha (degree)")
