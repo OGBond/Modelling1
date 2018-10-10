@@ -265,6 +265,20 @@ However, in the simplest possible case we can assume that this is a constant,
 \end_layout
 
 \begin_layout Subsection*
+Constitutive law
+\end_layout
+
+\begin_layout Standard
+We want to find the steady state of the membrane.
+ To start with we assume that the pressure is hydrostatic, i.e.
+ 
+\begin_inset Formula $h=h(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
 Variables
 \end_layout
 
@@ -287,10 +301,6 @@ radians
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsection*
-Parameters
 \end_layout
 
 \begin_layout Itemize
@@ -319,6 +329,10 @@ metres
 \end_inset
 
 -shaped.
+\end_layout
+
+\begin_layout Subsection*
+Parameters
 \end_layout
 
 \begin_layout Itemize
