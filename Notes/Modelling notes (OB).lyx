@@ -104,7 +104,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/user/Downloads/43443947_886891788174373_6860203510730850304_n.jpg
-	width 15cm
+	width 10cm
 
 \end_inset
 
@@ -115,7 +115,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/user/Downloads/43554517_393459901191999_1180683902625251328_n.jpg
-	width 15cm
+	width 10cm
 
 \end_inset
 
@@ -450,7 +450,22 @@ There is a value of
 
 , i.e.
  when 
-\begin_inset Formula $\alpha=$
+\begin_inset Formula $\alpha-\theta=\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{{\rm crit}}=\dfrac{\pi}{2}+\theta.
+\]
+
 \end_inset
 
 
